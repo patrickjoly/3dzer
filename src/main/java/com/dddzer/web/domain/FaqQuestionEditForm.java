@@ -66,10 +66,10 @@ public class FaqQuestionEditForm extends GenericEditForm<FaqQuestion, Integer> {
         // detach the currently set target if present
         //  1) to prevent any potential modification to go to the db
         //  2) to reduce session size        	
-        /*
+
         if (getFaqQuestion().getAccount() != null) {
             getCurrentConversation().getEntityManager().detach(getFaqQuestion().getAccount());
-        } */
+        }
 
         if (account != null) {
             getFaqQuestion().setAccount(getCurrentConversation().getEntityManager().merge(account));
