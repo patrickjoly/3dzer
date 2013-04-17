@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b24c0c91-7e27-4480-a392-5169ec34c168" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-    </list>
+    <list default="true" id="b24c0c91-7e27-4480-a392-5169ec34c168" name="Default" comment="" />
     <ignored path="dddzer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/src/main/resources/localization/domain/FaqAnswer_fr.xml" changelist="b24c0c91-7e27-4480-a392-5169ec34c168" time="1365782162712" ignored="false" />
@@ -173,7 +171,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.14616321">
+            <state line="16" column="32" selection-start="756" selection-end="756" vertical-scroll-proportion="0.29232642">
               <folding />
             </state>
           </provider>
@@ -864,7 +862,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.14616321">
+        <state line="16" column="32" selection-start="756" selection-end="756" vertical-scroll-proportion="0.29232642">
           <folding />
         </state>
       </provider>
