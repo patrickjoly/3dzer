@@ -12,12 +12,11 @@
     </prerequisites>
     <properties>
 
-        <!-- Note: during development using the same value for your login, password, database name and project name is really convenient -->
         <database.name>${project.name}</database.name>
         <database.host>localhost</database.host>
         <database.user>${project.name}</database.user>
         <database.password>${project.name}</database.password>
-        <!-- Default values when no database profile is set -->
+
         <!-- jdbc driver dependency -->
         <jdbc.groupId>mysql</jdbc.groupId>
         <jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
