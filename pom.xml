@@ -13,7 +13,7 @@
     </prerequisites>
     <properties>
 
-        <!-- Note: during development using the same value for your login, password, database name and project name is really convenient -->
+
         <database.name>${project.name}</database.name>
         <database.host>localhost</database.host>
         <database.user>${project.name}</database.user>
