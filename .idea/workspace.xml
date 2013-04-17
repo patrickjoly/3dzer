@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b24c0c91-7e27-4480-a392-5169ec34c168" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coucou.txt" afterPath="$PROJECT_DIR$/coucou.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="dddzer.iws" />
@@ -163,10 +161,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FaqAnswerEditForm.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FaqAnswerEditForm.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/FaqAnswerEditForm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="14" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.018270401">
+            <state line="109" column="68" selection-start="4123" selection-end="4123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.14616321">
               <folding />
             </state>
           </provider>
@@ -212,6 +219,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/ProductEditForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/FaqQuestionEditForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/FaqAnswerEditForm.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -664,7 +672,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1504" y="-4" width="1217" height="1029" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -677,7 +685,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24978614" sideWeight="0.6002265" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18819503" sideWeight="0.6704417" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18819503" sideWeight="0.6704417" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24721985" sideWeight="0.6704417" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.9982891" order="2" side_tool="false" content_ui="tabs" />
@@ -749,13 +757,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/FaqAnswerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="925" selection-end="925" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/PartEditForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="92" column="14" selection-start="3266" selection-end="3266" vertical-scroll-proportion="0.0">
@@ -847,16 +848,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/FaqAnswerEditForm.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="14" selection-start="2370" selection-end="2370" vertical-scroll-proportion="0.018270401">
+        <state line="13" column="121" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/roles.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dddzer/web/domain/FaqAnswerEditForm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="121" selection-start="693" selection-end="693" vertical-scroll-proportion="0.0">
+        <state line="109" column="68" selection-start="4123" selection-end="4123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.14616321">
           <folding />
         </state>
       </provider>
