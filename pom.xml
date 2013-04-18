@@ -56,7 +56,7 @@
         <application.version>${project.version}</application.version>
         <application.description>${project.description}</application.description>
         <application.host>localhost</application.host>
-        <application.port>8080</application.port>
+        <application.port>8090</application.port>
         <application.contextpath>/dddzer</application.contextpath>
         <log4j.level>DEBUG</log4j.level>
         <!-- hibernate, see by src/main/resource/hibernate.properties -->
