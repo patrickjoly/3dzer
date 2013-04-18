@@ -1425,3 +1425,38 @@
 [2013-04-12 15:04:49,753] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
 [2013-04-12 15:04:49,770] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqAnswer You may consider using a business key.
 [2013-04-12 15:04:49,774] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 12:53:47,072] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-18 12:54:01,110] [qtp954339663-24] [1e9nde5vmrbws19umis3q0kpkl] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 12:54:01,796] [qtp954339663-24] [1e9nde5vmrbws19umis3q0kpkl] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:50:03,774] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:03,776] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.MessageUtil.error] ====> !!ATTENTION!! DEVELOPERS should provide a less generic error message for the cause of this exception <====
+[2013-04-18 14:50:03,817] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:03,993] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:50:43,166] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:43,167] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.MessageUtil.error] ====> !!ATTENTION!! DEVELOPERS should provide a less generic error message for the cause of this exception <====
+[2013-04-18 14:50:43,179] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:43,208] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:50:47,380] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:47,382] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.MessageUtil.error] ====> !!ATTENTION!! DEVELOPERS should provide a less generic error message for the cause of this exception <====
+[2013-04-18 14:50:47,396] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:47,433] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:52:25,718] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:52:25,774] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:54:10,922] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:54:10,988] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:54:38,604] [qtp954339663-37] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:54:38,674] [qtp954339663-37] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:54:40,491] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:54:40,558] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:57:38,027] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:57:38,055] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:06:43,093] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:06:43,134] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:11:01,540] [qtp954339663-44] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:11:01,593] [qtp954339663-44] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:11:28,013] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:11:28,058] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:12:40,119] [qtp954339663-49] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:12:40,164] [qtp954339663-49] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:12:42,188] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:12:42,237] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
