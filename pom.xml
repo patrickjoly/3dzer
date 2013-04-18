@@ -30,9 +30,7 @@
         <jdbc.password>dddzer</jdbc.password>
         <hibernate.dialect>org.hibernate.dialect.MySQLInnoDBDialect</hibernate.dialect>
         <sql-maven-plugin.delimiter>;</sql-maven-plugin.delimiter>
-        <!-- ~~~~~~ -->
-        <!-- System -->
-        <!-- ~~~~~~ -->
+
         <jdk.version>1.6</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
