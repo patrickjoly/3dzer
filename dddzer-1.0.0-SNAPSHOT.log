@@ -1,0 +1,1470 @@
+[2013-04-12 14:57:41,793] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-12 14:57:42,856] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:42,912] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqQuestion You may consider using a business key.
+[2013-04-12 14:57:42,913] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.FaqQuestion
+        */ insert 
+        into
+            faq_question
+            (account_id, anwser) 
+        values
+            (?, ?)
+[2013-04-12 14:57:42,918] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:42,923] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqAnswer You may consider using a business key.
+[2013-04-12 14:57:42,929] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.FaqAnswer
+        */ insert 
+        into
+            faq_answer
+            (account_id, faq_question_id, question) 
+        values
+            (?, ?, ?)
+[2013-04-12 14:57:42,981] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.FaqAnswer */ select
+        faqanswer0_.id as id2_0_,
+        faqanswer0_.account_id as account2_2_0_,
+        faqanswer0_.faq_question_id as faq3_2_0_,
+        faqanswer0_.question as question2_0_ 
+    from
+        faq_answer faqanswer0_ 
+    where
+        faqanswer0_.id=?
+[2013-04-12 14:57:43,115] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.Category You may consider using a business key.
+[2013-04-12 14:57:43,116] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Category
+        */ insert 
+        into
+            category
+            (description_en, description_fr) 
+        values
+            (?, ?)
+[2013-04-12 14:57:43,119] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:43,137] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Part
+        */ insert 
+        into
+            part
+            (account_id, category_id, model, name, part_code, part_name, serial, id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?)
+[2013-04-12 14:57:43,141] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Part */ select
+        part0_.id as id4_0_,
+        part0_.account_id as account2_4_0_,
+        part0_.category_id as category3_4_0_,
+        part0_.model as model4_0_,
+        part0_.name as name4_0_,
+        part0_.part_code as part6_4_0_,
+        part0_.part_name as part7_4_0_,
+        part0_.serial as serial4_0_ 
+    from
+        part part0_ 
+    where
+        part0_.id=?
+[2013-04-12 14:57:43,217] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:43,219] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 14:57:43,302] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:43,304] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.User You may consider using a business key.
+[2013-04-12 14:57:43,317] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.User
+        */ insert 
+        into
+            `
+            user` (
+                account_id, city, country, creation_author, creation_date, email, enbled, first_name, last_name, modification_author, modification_date, street, version, zip
+            ) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2013-04-12 14:57:43,331] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.User */ select
+        user0_.id as id8_0_,
+        user0_.account_id as account2_8_0_,
+        user0_.city as city8_0_,
+        user0_.country as country8_0_,
+        user0_.creation_author as creation5_8_0_,
+        user0_.creation_date as creation6_8_0_,
+        user0_.email as email8_0_,
+        user0_.enbled as enbled8_0_,
+        user0_.first_name as first9_8_0_,
+        user0_.last_name as last10_8_0_,
+        user0_.modification_author as modific11_8_0_,
+        user0_.modification_date as modific12_8_0_,
+        user0_.street as street8_0_,
+        user0_.version as version8_0_,
+        user0_.zip as zip8_0_ 
+    from
+        `user` user0_ 
+    where
+        user0_.id=?
+[2013-04-12 14:57:43,434] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.ProductType You may consider using a business key.
+[2013-04-12 14:57:43,440] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.ProductType
+        */ insert 
+        into
+            product_type
+            (name) 
+        values
+            (?)
+[2013-04-12 14:57:43,442] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.ProductType */ select
+        producttyp0_.id as id6_0_,
+        producttyp0_.name as name6_0_ 
+    from
+        product_type producttyp0_ 
+    where
+        producttyp0_.id=?
+[2013-04-12 14:57:43,568] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.Category You may consider using a business key.
+[2013-04-12 14:57:43,569] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Category
+        */ insert 
+        into
+            category
+            (description_en, description_fr) 
+        values
+            (?, ?)
+[2013-04-12 14:57:43,571] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:43,575] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Part
+        */ insert 
+        into
+            part
+            (account_id, category_id, model, name, part_code, part_name, serial, id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?)
+[2013-04-12 14:57:43,577] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.ProductType You may consider using a business key.
+[2013-04-12 14:57:43,578] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.ProductType
+        */ insert 
+        into
+            product_type
+            (name) 
+        values
+            (?)
+[2013-04-12 14:57:43,579] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.Product You may consider using a business key.
+[2013-04-12 14:57:43,586] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Product
+        */ insert 
+        into
+            product
+            (accout_id, description_, part_id, price, product_binary, product_content_type, product_file_name, product_size, product_type_id) 
+        values
+            (?, ?, ?, ?, ?, ?, ?, ?, ?)
+[2013-04-12 14:57:43,591] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Product */ select
+        product0_.id as id5_0_,
+        product0_.accout_id as accout2_5_0_,
+        product0_.description_ as descript3_5_0_,
+        product0_.part_id as part4_5_0_,
+        product0_.price as price5_0_,
+        product0_.product_binary as product6_5_0_,
+        product0_.product_content_type as product7_5_0_,
+        product0_.product_file_name as product8_5_0_,
+        product0_.product_size as product9_5_0_,
+        product0_.product_type_id as product10_5_0_ 
+    from
+        product product0_ 
+    where
+        product0_.id=?
+[2013-04-12 14:57:43,691] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Account
+        */ insert 
+        into
+            account
+            (email, is_enabled, login, `password`) 
+        values
+            (?, ?, ?, ?)
+[2013-04-12 14:57:43,693] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqQuestion You may consider using a business key.
+[2013-04-12 14:57:43,694] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.FaqQuestion
+        */ insert 
+        into
+            faq_question
+            (account_id, anwser) 
+        values
+            (?, ?)
+[2013-04-12 14:57:43,697] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.FaqQuestion */ select
+        faqquestio0_.id as id3_0_,
+        faqquestio0_.account_id as account2_3_0_,
+        faqquestio0_.anwser as anwser3_0_ 
+    from
+        faq_question faqquestio0_ 
+    where
+        faqquestio0_.id=?
+[2013-04-12 14:57:43,758] [main] [] [] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.Category You may consider using a business key.
+[2013-04-12 14:57:43,759] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Category
+        */ insert 
+        into
+            category
+            (description_en, description_fr) 
+        values
+            (?, ?)
+[2013-04-12 14:57:43,761] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Category */ select
+        category0_.id as id1_0_,
+        category0_.description_en as descript2_1_0_,
+        category0_.description_fr as descript3_1_0_ 
+    from
+        category category0_ 
+    where
+        category0_.id=?
+[2013-04-12 14:57:43,836] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.Role
+        */ insert 
+        into
+            `
+            role` (
+                role_name
+            ) 
+        values
+            (?)
+[2013-04-12 14:57:43,848] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Role */ select
+        role0_.id as id7_0_,
+        role0_.role_name as role2_7_0_ 
+    from
+        `role` role0_ 
+    where
+        role0_.id=?
+[2013-04-12 14:57:55,348] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-12 14:58:00,311] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-12 14:58:01,305] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* named HQL query Account.selectAll */ select
+        account0_.id as id0_,
+        account0_.email as email0_,
+        account0_.is_enabled as is3_0_,
+        account0_.login as login0_,
+        account0_.`password` as password5_0_ 
+    from
+        account account0_ limit ?
+[2013-04-12 14:58:01,362] [main] [] [] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* named native SQL query Account.selectAll.native */ select
+        {account.*} 
+    from
+        account limit ?
+[2013-04-12 14:58:01,363] [main] [] [] [jdbc.spi.SqlExceptionHelper.logExceptions] SQL Error: 1064, SQLState: 42000
+[2013-04-12 14:58:01,364] [main] [] [] [jdbc.spi.SqlExceptionHelper.logExceptions] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*} from account limit 500' at line 1
+[2013-04-12 14:58:37,702] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-12 15:00:02,217] [qtp2159131-19] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:02,790] [qtp2159131-19] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:06,960] [qtp2159131-21] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:07,006] [qtp2159131-21] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:11,598] [qtp2159131-20] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [dddzer.security.UserDetailsServiceImpl.loadUserByUsername] Security verification for user 'admin'
+[2013-04-12 15:00:11,658] [qtp2159131-20] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [cache.ehcache.AbstractEhcacheRegionFactory.getCache] HHH020003: Could not find a specific ehcache configuration for cache named [com.dddzer.domain.Account]; using defaults.
+[2013-04-12 15:00:11,697] [qtp2159131-20] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        generatedAlias0 
+    from
+        Account as generatedAlias0 
+    where
+        lower(generatedAlias0.login)=:param0 */ select
+            account0_.id as id0_,
+            account0_.email as email0_,
+            account0_.is_enabled as is3_0_,
+            account0_.login as login0_,
+            account0_.`password` as password5_0_ 
+        from
+            account account0_ 
+        where
+            lower(account0_.login)=? limit ?
+[2013-04-12 15:00:11,757] [qtp2159131-20] [1u7p6lookkk64fk6th0wmrjtu] [anonymousUser] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:00:11,774] [qtp2159131-22] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:11,815] [qtp2159131-22] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:20,703] [qtp2159131-19] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.conversation.ConversationFilter.doFilter] No conversation factory found. requested url: /dddzer/error/accessdenied.faces => we redirect her to /home.faces
+[2013-04-12 15:00:20,707] [qtp2159131-18] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:20,746] [qtp2159131-18] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:25,312] [qtp2159131-19] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.conversation.ConversationFilter.doFilter] No conversation factory found. requested url: /dddzer/error/accessdenied.faces => we redirect her to /home.faces
+[2013-04-12 15:00:25,316] [qtp2159131-18] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:25,356] [qtp2159131-18] [pjcvzhj3lrcs1umr77olcsgcl] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:29,154] [qtp2159131-19] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:29,195] [qtp2159131-19] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:30,633] [qtp2159131-23] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:30,654] [qtp2159131-23] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:34,468] [qtp2159131-18] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [dddzer.security.UserDetailsServiceImpl.loadUserByUsername] Security verification for user 'admin'
+[2013-04-12 15:00:34,472] [qtp2159131-18] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:00:34,474] [qtp2159131-18] [1iky3pm92nuscy67r7o07atyz] [anonymousUser] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:00:34,482] [qtp2159131-22] [1c8axaope8m7n9gfx22v4depm] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:34,516] [qtp2159131-22] [1c8axaope8m7n9gfx22v4depm] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:00:38,242] [qtp2159131-21] [1c8axaope8m7n9gfx22v4depm] [admin] [web.conversation.ConversationFilter.doFilter] No conversation factory found. requested url: /dddzer/error/accessdenied.faces => we redirect her to /home.faces
+[2013-04-12 15:00:38,246] [qtp2159131-23] [1c8axaope8m7n9gfx22v4depm] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:00:38,274] [qtp2159131-23] [1c8axaope8m7n9gfx22v4depm] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:01:54,201] [qtp2159131-23] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:01:54,228] [qtp2159131-23] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:01:55,051] [qtp2159131-19] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:01:55,069] [qtp2159131-19] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:01:59,515] [qtp2159131-21] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [dddzer.security.UserDetailsServiceImpl.loadUserByUsername] Security verification for user 'admin'
+[2013-04-12 15:01:59,517] [qtp2159131-21] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:01:59,520] [qtp2159131-21] [1unrb2hmm3iec24167mtv4ge4] [anonymousUser] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:01:59,526] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:01:59,552] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:02,086] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Account
+[2013-04-12 15:02:02,087] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:02:02,095] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:02,416] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        count(*) 
+    from
+        Account as generatedAlias0 */ select
+            count(*) as col_0_0_ 
+        from
+            account account0_
+[2013-04-12 15:02:02,433] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        generatedAlias0 
+    from
+        Account as generatedAlias0 
+    order by
+        generatedAlias0.login asc */ select
+            account0_.id as id0_,
+            account0_.email as email0_,
+            account0_.is_enabled as is3_0_,
+            account0_.login as login0_,
+            account0_.`password` as password5_0_ 
+        from
+            account account0_ 
+        order by
+            account0_.login asc limit ?
+[2013-04-12 15:02:02,508] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:04,515] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:02:04,548] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:04,558] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:04,563] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:04,567] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:04,635] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:04,664] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Edit patrick
+[2013-04-12 15:02:04,665] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] conv. 1 resuming: conversation's entityManager created: 22111783
+[2013-04-12 15:02:04,665] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:04,666] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:04,675] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:04,728] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:04,733] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.parts */ select
+        parts0_.account_id as account2_0_1_,
+        parts0_.id as id4_1_,
+        parts0_.id as id4_0_,
+        parts0_.account_id as account2_4_0_,
+        parts0_.category_id as category3_4_0_,
+        parts0_.model as model4_0_,
+        parts0_.name as name4_0_,
+        parts0_.part_code as part6_4_0_,
+        parts0_.part_name as part7_4_0_,
+        parts0_.serial as serial4_0_ 
+    from
+        part parts0_ 
+    where
+        parts0_.account_id=?
+[2013-04-12 15:02:04,736] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.faqQuestions */ select
+        faqquestio0_.account_id as account2_0_1_,
+        faqquestio0_.id as id3_1_,
+        faqquestio0_.id as id3_0_,
+        faqquestio0_.account_id as account2_3_0_,
+        faqquestio0_.anwser as anwser3_0_ 
+    from
+        faq_question faqquestio0_ 
+    where
+        faqquestio0_.account_id=?
+[2013-04-12 15:02:04,739] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:02:04,874] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:07,052] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:07,052] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:07,089] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:07,093] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:07,096] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:07,099] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:07,099] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:07,120] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:12,882] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:12,883] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:12,912] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:12,917] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:12,925] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:12,928] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:12,930] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:12,932] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Faq Question
+[2013-04-12 15:02:12,933] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:12,933] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:02:12,942] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:13,013] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:20,900] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:20,901] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:02:20,921] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:20,923] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:20,943] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:20,945] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:20,946] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:20,947] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Faq Question
+[2013-04-12 15:02:20,954] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:20,954] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:20,956] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:21,019] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqQuestion You may consider using a business key.
+[2013-04-12 15:02:21,033] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:34,212] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:34,212] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:34,240] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:34,241] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:34,259] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:38,088] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 22111783
+[2013-04-12 15:02:38,088] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:38,125] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:38,129] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:38,142] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        count(c) 
+    from
+        Account c 
+    where
+        login=:login 
+        and id<>:id */ select
+            count(account0_.id) as col_0_0_ 
+        from
+            account account0_ 
+        where
+            account0_.login=? 
+            and account0_.id<>?
+[2013-04-12 15:02:38,149] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        count(c) 
+    from
+        Account c 
+    where
+        password=:password 
+        and id<>:id */ select
+            count(account0_.id) as col_0_0_ 
+        from
+            account account0_ 
+        where
+            account0_.`password`=? 
+            and account0_.id<>?
+[2013-04-12 15:02:38,155] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:38,158] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:38,180] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.FaqQuestion
+        */ insert 
+        into
+            faq_question
+            (account_id, anwser) 
+        values
+            (?, ?)
+[2013-04-12 15:02:38,244] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:38,244] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationPausing] conv. 1 pausing: conversation's entityManager closed: 22111783
+[2013-04-12 15:02:38,245] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Edit patrick
+[2013-04-12 15:02:38,257] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:02:38,258] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:38,361] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:38,364] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:38,379] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:38,395] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:41,485] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:02:41,504] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:41,507] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:41,509] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:41,512] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:41,513] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:41,521] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Edit patrick
+[2013-04-12 15:02:41,521] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] conv. 1 resuming: conversation's entityManager created: 16913007
+[2013-04-12 15:02:41,522] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 16913007
+[2013-04-12 15:02:41,522] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:41,523] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:41,531] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:41,534] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.parts */ select
+        parts0_.account_id as account2_0_1_,
+        parts0_.id as id4_1_,
+        parts0_.id as id4_0_,
+        parts0_.account_id as account2_4_0_,
+        parts0_.category_id as category3_4_0_,
+        parts0_.model as model4_0_,
+        parts0_.name as name4_0_,
+        parts0_.part_code as part6_4_0_,
+        parts0_.part_name as part7_4_0_,
+        parts0_.serial as serial4_0_ 
+    from
+        part parts0_ 
+    where
+        parts0_.account_id=?
+[2013-04-12 15:02:41,537] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.faqQuestions */ select
+        faqquestio0_.account_id as account2_0_1_,
+        faqquestio0_.id as id3_1_,
+        faqquestio0_.id as id3_0_,
+        faqquestio0_.account_id as account2_3_0_,
+        faqquestio0_.anwser as anwser3_0_ 
+    from
+        faq_question faqquestio0_ 
+    where
+        faqquestio0_.account_id=?
+[2013-04-12 15:02:41,540] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:02:41,586] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:43,832] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 16913007
+[2013-04-12 15:02:43,832] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:43,857] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:43,860] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:43,862] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:43,864] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:43,864] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:43,879] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:46,604] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 16913007
+[2013-04-12 15:02:46,605] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:46,627] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:46,627] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:46,642] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:48,382] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 16913007
+[2013-04-12 15:02:48,382] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:48,404] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:48,408] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:48,408] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationPausing] conv. 1 pausing: conversation's entityManager closed: 16913007
+[2013-04-12 15:02:48,409] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Edit patrick
+[2013-04-12 15:02:48,410] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:02:48,411] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:48,440] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:48,442] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:48,444] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:48,457] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:50,564] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:02:50,581] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:50,584] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:50,586] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:02:50,589] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:02:50,590] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:02:50,608] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Edit user
+[2013-04-12 15:02:50,608] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] conv. 1 resuming: conversation's entityManager created: 14513316
+[2013-04-12 15:02:50,609] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 14513316
+[2013-04-12 15:02:50,609] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:50,610] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:50,617] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:02:50,621] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.parts */ select
+        parts0_.account_id as account2_0_1_,
+        parts0_.id as id4_1_,
+        parts0_.id as id4_0_,
+        parts0_.account_id as account2_4_0_,
+        parts0_.category_id as category3_4_0_,
+        parts0_.model as model4_0_,
+        parts0_.name as name4_0_,
+        parts0_.part_code as part6_4_0_,
+        parts0_.part_name as part7_4_0_,
+        parts0_.serial as serial4_0_ 
+    from
+        part parts0_ 
+    where
+        parts0_.account_id=?
+[2013-04-12 15:02:50,623] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.faqQuestions */ select
+        faqquestio0_.account_id as account2_0_1_,
+        faqquestio0_.id as id3_1_,
+        faqquestio0_.id as id3_0_,
+        faqquestio0_.account_id as account2_3_0_,
+        faqquestio0_.anwser as anwser3_0_ 
+    from
+        faq_question faqquestio0_ 
+    where
+        faqquestio0_.account_id=?
+[2013-04-12 15:02:50,624] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:02:50,658] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:02:59,696] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 14513316
+[2013-04-12 15:02:59,696] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:02:59,717] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:02:59,718] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:02:59,730] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:01,446] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 14513316
+[2013-04-12 15:03:01,446] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:01,466] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:01,471] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:01,474] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationPausing] conv. 1 pausing: conversation's entityManager closed: 14513316
+[2013-04-12 15:03:01,475] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Edit user
+[2013-04-12 15:03:01,476] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:03:01,477] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:01,506] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:01,508] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:01,510] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:01,521] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:05,585] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:03:05,601] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:05,604] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:05,606] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:05,608] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:05,609] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:05,624] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Edit patrick
+[2013-04-12 15:03:05,624] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] conv. 1 resuming: conversation's entityManager created: 32269772
+[2013-04-12 15:03:05,625] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:05,625] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:05,626] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:05,633] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:05,636] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.parts */ select
+        parts0_.account_id as account2_0_1_,
+        parts0_.id as id4_1_,
+        parts0_.id as id4_0_,
+        parts0_.account_id as account2_4_0_,
+        parts0_.category_id as category3_4_0_,
+        parts0_.model as model4_0_,
+        parts0_.name as name4_0_,
+        parts0_.part_code as part6_4_0_,
+        parts0_.part_name as part7_4_0_,
+        parts0_.serial as serial4_0_ 
+    from
+        part parts0_ 
+    where
+        parts0_.account_id=?
+[2013-04-12 15:03:05,638] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.faqQuestions */ select
+        faqquestio0_.account_id as account2_0_1_,
+        faqquestio0_.id as id3_1_,
+        faqquestio0_.id as id3_0_,
+        faqquestio0_.account_id as account2_3_0_,
+        faqquestio0_.anwser as anwser3_0_ 
+    from
+        faq_question faqquestio0_ 
+    where
+        faqquestio0_.account_id=?
+[2013-04-12 15:03:05,639] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:03:05,678] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:08,043] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:08,044] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:08,065] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:08,067] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:08,069] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:08,071] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:08,072] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:08,082] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:09,277] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:09,277] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:09,295] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:09,297] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:09,299] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:09,301] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:09,302] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:09,306] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Faq Question
+[2013-04-12 15:03:09,306] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:09,307] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:03:09,308] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:09,324] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.FaqQuestion.faqAnswers */ select
+        faqanswers0_.faq_question_id as faq3_3_1_,
+        faqanswers0_.id as id2_1_,
+        faqanswers0_.id as id2_0_,
+        faqanswers0_.account_id as account2_2_0_,
+        faqanswers0_.faq_question_id as faq3_2_0_,
+        faqanswers0_.question as question2_0_ 
+    from
+        faq_answer faqanswers0_ 
+    where
+        faqanswers0_.faq_question_id=?
+[2013-04-12 15:03:09,332] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:17,539] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:17,540] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:03:17,552] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:17,554] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:17,556] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:17,557] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:17,559] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:17,561] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Faq Answer
+[2013-04-12 15:03:17,561] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:17,561] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:03:17,569] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:17,618] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:24,079] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] Skip conversation's entityManager binding for ajax request coming from id: form:account
+[2013-04-12 15:03:24,080] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:03:24,096] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:24,099] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        generatedAlias0 
+    from
+        Account as generatedAlias0 
+    order by
+        generatedAlias0.login asc */ select
+            account0_.id as id0_,
+            account0_.email as email0_,
+            account0_.is_enabled as is3_0_,
+            account0_.login as login0_,
+            account0_.`password` as password5_0_ 
+        from
+            account account0_ 
+        order by
+            account0_.login asc limit ?
+[2013-04-12 15:03:24,102] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:24,111] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:26,801] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] Skip conversation's entityManager binding for ajax request coming from id: form:account
+[2013-04-12 15:03:26,801] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:03:26,814] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:26,816] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:26,819] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:26,821] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:26,825] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_1_,
+        account0_.email as email0_1_,
+        account0_.is_enabled as is3_0_1_,
+        account0_.login as login0_1_,
+        account0_.`password` as password5_0_1_,
+        faqquestio1_.account_id as account2_0_3_,
+        faqquestio1_.id as id3_3_,
+        faqquestio1_.id as id3_0_,
+        faqquestio1_.account_id as account2_3_0_,
+        faqquestio1_.anwser as anwser3_0_ 
+    from
+        account account0_ 
+    left outer join
+        faq_question faqquestio1_ 
+            on account0_.id=faqquestio1_.account_id 
+    where
+        account0_.id=?
+[2013-04-12 15:03:26,828] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:26,829] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:26,839] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:41,428] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:41,428] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:03:41,441] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:41,442] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:41,449] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:41,453] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_1_,
+        account0_.email as email0_1_,
+        account0_.is_enabled as is3_0_1_,
+        account0_.login as login0_1_,
+        account0_.`password` as password5_0_1_,
+        faqquestio1_.account_id as account2_0_3_,
+        faqquestio1_.id as id3_3_,
+        faqquestio1_.id as id3_0_,
+        faqquestio1_.account_id as account2_3_0_,
+        faqquestio1_.anwser as anwser3_0_ 
+    from
+        account account0_ 
+    left outer join
+        faq_question faqquestio1_ 
+            on account0_.id=faqquestio1_.account_id 
+    where
+        account0_.id=?
+[2013-04-12 15:03:41,456] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:41,457] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:41,457] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Faq Answer
+[2013-04-12 15:03:41,461] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:41,461] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:03:41,463] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:41,480] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqAnswer You may consider using a business key.
+[2013-04-12 15:03:41,484] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:43,117] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:43,118] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:03:43,136] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:43,138] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:43,140] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:43,141] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:43,142] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:43,143] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Faq Question
+[2013-04-12 15:03:43,146] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:43,147] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:43,148] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:43,181] [qtp2159131-20] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:44,588] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 32269772
+[2013-04-12 15:03:44,589] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:44,606] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:44,609] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:44,612] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        count(c) 
+    from
+        Account c 
+    where
+        login=:login 
+        and id<>:id */ select
+            count(account0_.id) as col_0_0_ 
+        from
+            account account0_ 
+        where
+            account0_.login=? 
+            and account0_.id<>?
+[2013-04-12 15:03:44,615] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* select
+        count(c) 
+    from
+        Account c 
+    where
+        password=:password 
+        and id<>:id */ select
+            count(account0_.id) as col_0_0_ 
+        from
+            account account0_ 
+        where
+            account0_.`password`=? 
+            and account0_.id<>?
+[2013-04-12 15:03:44,619] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:44,621] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:44,627] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* insert com.dddzer.domain.FaqAnswer
+        */ insert 
+        into
+            faq_answer
+            (account_id, faq_question_id, question) 
+        values
+            (?, ?, ?)
+[2013-04-12 15:03:44,722] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:44,723] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationPausing] conv. 1 pausing: conversation's entityManager closed: 32269772
+[2013-04-12 15:03:44,723] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Edit patrick
+[2013-04-12 15:03:44,727] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:03:44,728] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:44,751] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:44,753] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:44,755] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:44,763] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:47,301] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 1. Uri: /dddzer/domain/accountSelect.faces
+[2013-04-12 15:03:47,316] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:47,318] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:47,320] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:47,321] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:47,322] [qtp2159131-18] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:47,331] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Edit patrick
+[2013-04-12 15:03:47,331] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] conv. 1 resuming: conversation's entityManager created: 21360094
+[2013-04-12 15:03:47,332] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:03:47,332] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:47,333] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:47,340] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:03:47,343] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.parts */ select
+        parts0_.account_id as account2_0_1_,
+        parts0_.id as id4_1_,
+        parts0_.id as id4_0_,
+        parts0_.account_id as account2_4_0_,
+        parts0_.category_id as category3_4_0_,
+        parts0_.model as model4_0_,
+        parts0_.name as name4_0_,
+        parts0_.part_code as part6_4_0_,
+        parts0_.part_name as part7_4_0_,
+        parts0_.serial as serial4_0_ 
+    from
+        part parts0_ 
+    where
+        parts0_.account_id=?
+[2013-04-12 15:03:47,345] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.faqQuestions */ select
+        faqquestio0_.account_id as account2_0_1_,
+        faqquestio0_.id as id3_1_,
+        faqquestio0_.id as id3_0_,
+        faqquestio0_.account_id as account2_3_0_,
+        faqquestio0_.anwser as anwser3_0_ 
+    from
+        faq_question faqquestio0_ 
+    where
+        faqquestio0_.account_id=?
+[2013-04-12 15:03:47,346] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:03:47,374] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:49,387] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:03:49,388] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:49,406] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:49,408] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:49,410] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:49,411] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:49,412] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:49,423] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:03:52,903] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:03:52,903] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:03:52,920] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:52,924] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:03:52,927] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:03:52,931] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:03:52,932] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:03:52,936] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Faq Question
+[2013-04-12 15:03:52,936] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:03:52,937] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:03:52,938] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:03:52,965] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.FaqQuestion.faqAnswers */ select
+        faqanswers0_.faq_question_id as faq3_3_1_,
+        faqanswers0_.id as id2_1_,
+        faqanswers0_.id as id2_0_,
+        faqanswers0_.account_id as account2_2_0_,
+        faqanswers0_.faq_question_id as faq3_2_0_,
+        faqanswers0_.question as question2_0_ 
+    from
+        faq_answer faqanswers0_ 
+    where
+        faqanswers0_.faq_question_id=?
+[2013-04-12 15:03:52,973] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:04:20,157] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:20,158] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:04:20,169] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:20,171] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:04:20,172] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Faq Question
+[2013-04-12 15:04:20,175] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:20,176] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:04:20,177] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:20,206] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:04:28,883] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:28,884] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 2. Uri: /dddzer/domain/accountEdit.faces
+[2013-04-12 15:04:28,914] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:28,917] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:04:28,919] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:04:28,920] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:04:28,921] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:04:28,927] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Faq Question
+[2013-04-12 15:04:28,928] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:28,928] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:04:28,929] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:28,947] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:04:33,025] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:33,026] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:04:33,037] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:33,040] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:04:33,042] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:04:33,043] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:04:33,045] [qtp2159131-19] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:04:33,050] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.pushNextContextIfNeeded] pushed 1 context on stack: Faq Answer
+[2013-04-12 15:04:33,050] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:33,050] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:04:33,052] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:33,070] [qtp2159131-21] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:04:35,582] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] Skip conversation's entityManager binding for ajax request coming from id: form:account
+[2013-04-12 15:04:35,583] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:04:35,594] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:35,597] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:04:35,598] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:04:35,600] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:04:35,601] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:04:35,609] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:04:36,860] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.conversationResuming] Skip conversation's entityManager binding for ajax request coming from id: form:account
+[2013-04-12 15:04:36,861] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:04:36,872] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:36,874] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_0_,
+        account0_.email as email0_0_,
+        account0_.is_enabled as is3_0_0_,
+        account0_.login as login0_0_,
+        account0_.`password` as password5_0_0_ 
+    from
+        account account0_ 
+    where
+        account0_.id=?
+[2013-04-12 15:04:36,876] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:04:36,878] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:04:36,879] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:04:36,879] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:04:36,888] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-12 15:04:49,705] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:49,705] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 4. Uri: /dddzer/domain/faqAnswerEdit.faces
+[2013-04-12 15:04:49,716] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:49,726] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] APPLY_REQUEST_VALUES 2
+[2013-04-12 15:04:49,730] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] PROCESS_VALIDATIONS 3
+[2013-04-12 15:04:49,732] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.Account */ select
+        account0_.id as id0_1_,
+        account0_.email as email0_1_,
+        account0_.is_enabled as is3_0_1_,
+        account0_.login as login0_1_,
+        account0_.`password` as password5_0_1_,
+        faqquestio1_.account_id as account2_0_3_,
+        faqquestio1_.id as id3_3_,
+        faqquestio1_.id as id3_0_,
+        faqquestio1_.account_id as account2_3_0_,
+        faqquestio1_.anwser as anwser3_0_ 
+    from
+        account account0_ 
+    left outer join
+        faq_question faqquestio1_ 
+            on account0_.id=faqquestio1_.account_id 
+    where
+        account0_.id=?
+[2013-04-12 15:04:49,736] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load com.dddzer.domain.FaqAnswer */ select
+        faqanswer0_.id as id2_3_,
+        faqanswer0_.account_id as account2_2_3_,
+        faqanswer0_.faq_question_id as faq3_2_3_,
+        faqanswer0_.question as question2_3_,
+        account1_.id as id0_0_,
+        account1_.email as email0_0_,
+        account1_.is_enabled as is3_0_0_,
+        account1_.login as login0_0_,
+        account1_.`password` as password5_0_0_,
+        faqquestio2_.account_id as account2_0_5_,
+        faqquestio2_.id as id3_5_,
+        faqquestio2_.id as id3_1_,
+        faqquestio2_.account_id as account2_3_1_,
+        faqquestio2_.anwser as anwser3_1_,
+        faqquestio3_.id as id3_2_,
+        faqquestio3_.account_id as account2_3_2_,
+        faqquestio3_.anwser as anwser3_2_ 
+    from
+        faq_answer faqanswer0_ 
+    inner join
+        account account1_ 
+            on faqanswer0_.account_id=account1_.id 
+    left outer join
+        faq_question faqquestio2_ 
+            on account1_.id=faqquestio2_.account_id 
+    inner join
+        faq_question faqquestio3_ 
+            on faqanswer0_.faq_question_id=faqquestio3_.id 
+    where
+        faqanswer0_.id=?
+[2013-04-12 15:04:49,740] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.FaqQuestion.faqAnswers */ select
+        faqanswers0_.faq_question_id as faq3_3_1_,
+        faqanswers0_.id as id2_1_,
+        faqanswers0_.id as id2_0_,
+        faqanswers0_.account_id as account2_2_0_,
+        faqanswers0_.faq_question_id as faq3_2_0_,
+        faqanswers0_.question as question2_0_ 
+    from
+        faq_answer faqanswers0_ 
+    where
+        faqanswers0_.faq_question_id=?
+[2013-04-12 15:04:49,742] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load one-to-many com.dddzer.domain.Account.parts */ select
+        parts0_.account_id as account2_0_1_,
+        parts0_.id as id4_1_,
+        parts0_.id as id4_0_,
+        parts0_.account_id as account2_4_0_,
+        parts0_.category_id as category3_4_0_,
+        parts0_.model as model4_0_,
+        parts0_.name as name4_0_,
+        parts0_.part_code as part6_4_0_,
+        parts0_.part_name as part7_4_0_,
+        parts0_.serial as serial4_0_ 
+    from
+        part parts0_ 
+    where
+        parts0_.account_id=?
+[2013-04-12 15:04:49,743] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [jdbc.spi.SqlStatementLogger.logStatement] 
+    /* load collection com.dddzer.domain.Account.roles */ select
+        roles0_.account_id as account1_0_1_,
+        roles0_.role_id as role2_9_1_,
+        role1_.id as id7_0_,
+        role1_.role_name as role2_7_0_ 
+    from
+        account_role roles0_ 
+    inner join
+        `role` role1_ 
+            on roles0_.role_id=role1_.id 
+    where
+        roles0_.account_id=?
+[2013-04-12 15:04:49,745] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] UPDATE_MODEL_VALUES 4
+[2013-04-12 15:04:49,746] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] INVOKE_APPLICATION 5
+[2013-04-12 15:04:49,746] [qtp2159131-23] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.Conversation.popContextesIfNeeded] popped 1 context from stack: Faq Answer
+[2013-04-12 15:04:49,751] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.EntityManagerConversationListener.bindEntityManager] Binding conversation's entityManager: 21360094
+[2013-04-12 15:04:49,752] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.conversation.ConversationFilter.doFilter] Conv. 1 resumed. Nb ctx: 3. Uri: /dddzer/domain/faqQuestionEdit.faces
+[2013-04-12 15:04:49,753] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-12 15:04:49,770] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [dddzer.domain.IdentifiableHashBuilder.hash] DEVELOPER: hashCode is not safe.If you encounter this message you should take the time to carefuly review the equals/hashCode methods for: com.dddzer.domain.FaqAnswer You may consider using a business key.
+[2013-04-12 15:04:49,774] [qtp2159131-22] [crv53mbvcbxk19sclka1c0gku] [admin] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 12:53:47,072] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-18 12:54:01,110] [qtp954339663-24] [1e9nde5vmrbws19umis3q0kpkl] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 12:54:01,796] [qtp954339663-24] [1e9nde5vmrbws19umis3q0kpkl] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:50:03,774] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:03,776] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.MessageUtil.error] ====> !!ATTENTION!! DEVELOPERS should provide a less generic error message for the cause of this exception <====
+[2013-04-18 14:50:03,817] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:03,993] [qtp954339663-31] [1o67j8whlvpk5gmgxc4nbt5r8] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:50:43,166] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:43,167] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.MessageUtil.error] ====> !!ATTENTION!! DEVELOPERS should provide a less generic error message for the cause of this exception <====
+[2013-04-18 14:50:43,179] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:43,208] [qtp954339663-29] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:50:47,380] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:47,382] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.MessageUtil.error] ====> !!ATTENTION!! DEVELOPERS should provide a less generic error message for the cause of this exception <====
+[2013-04-18 14:50:47,396] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:50:47,433] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:52:25,718] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:52:25,774] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:54:10,922] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:54:10,988] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:54:38,604] [qtp954339663-37] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:54:38,674] [qtp954339663-37] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:54:40,491] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:54:40,558] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 14:57:38,027] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 14:57:38,055] [qtp954339663-33] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:06:43,093] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:06:43,134] [qtp954339663-28] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:11:01,540] [qtp954339663-44] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:11:01,593] [qtp954339663-44] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:11:28,013] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:11:28,058] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:12:40,119] [qtp954339663-49] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:12:40,164] [qtp954339663-49] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:12:42,188] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:12:42,237] [qtp954339663-45] [5mb52pobjgl41oq84znvr9ig1] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:29:58,334] [qtp954339663-44] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:29:58,371] [qtp954339663-44] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:32:32,009] [qtp954339663-49] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:32:32,062] [qtp954339663-49] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:34:08,054] [qtp954339663-52] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:34:08,089] [qtp954339663-52] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-18 15:35:07,735] [qtp954339663-49] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-18 15:35:07,791] [qtp954339663-49] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
