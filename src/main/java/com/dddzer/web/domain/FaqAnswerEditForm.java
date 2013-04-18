@@ -11,10 +11,13 @@ import static com.dddzer.web.conversation.ConversationHolder.getCurrentConversat
 import javax.inject.Inject;
 import javax.inject.Named;
 import org.springframework.context.annotation.Scope;
+import com.dddzer.domain.Account;
 import com.dddzer.domain.FaqAnswer;
 import com.dddzer.domain.FaqQuestion;
 import com.dddzer.repository.FaqAnswerRepository;
+import com.dddzer.web.conversation.ConversationCallBack;
 import com.dddzer.web.conversation.ConversationContext;
+import com.dddzer.web.domain.AccountController;
 import com.dddzer.web.domain.FaqQuestionController;
 import com.dddzer.web.domain.support.GenericEditForm;
 
@@ -42,10 +45,9 @@ public class FaqAnswerEditForm extends GenericEditForm<FaqAnswer, Integer> {
         // detach the currently set target if present
         //  1) to prevent any potential modification to go to the db
         //  2) to reduce session size        	
-        /*
         if (getFaqAnswer().getFaqQuestion() != null) {
             getCurrentConversation().getEntityManager().detach(getFaqAnswer().getFaqQuestion());
-        } */
+        }
 
         if (faqQuestion != null) {
             getFaqAnswer().setFaqQuestion(getCurrentConversation().getEntityManager().merge(faqQuestion));
@@ -58,6 +60,25 @@ public class FaqAnswerEditForm extends GenericEditForm<FaqAnswer, Integer> {
         return getFaqAnswer().getFaqQuestion();
     }
 
+    public void setSelectedAccount(Account account) {
+        // detach the currently set target if present
+        //  1) to prevent any potential modification to go to the db
+        //  2) to reduce session size        	
+        if (getFaqAnswer().getAccount() != null) {
+            getCurrentConversation().getEntityManager().detach(getFaqAnswer().getAccount());
+        }
+
+        if (account != null) {
+            getFaqAnswer().setAccount(getCurrentConversation().getEntityManager().merge(account));
+        } else {
+            getFaqAnswer().setAccount(null);
+        }
+    }
+
+    public Account getSelectedAccount() {
+        return getFaqAnswer().getAccount();
+    }
+
     // --------------------------------------------
     // Actions for faqQuestion association
     // --------------------------------------------
@@ -66,6 +87,66 @@ public class FaqAnswerEditForm extends GenericEditForm<FaqAnswer, Integer> {
         ConversationContext<FaqQuestion> ctx = FaqQuestionController.newEditContext(getFaqAnswer().getFaqQuestion());
         ctx.setLabelWithKey("faqAnswer_faqQuestion");
         getCurrentConversation().setNextContextSubReadOnly(ctx);
+        return ctx.view();
+    }
+
+    // --------------------------------------------
+    // Actions for account association
+    // --------------------------------------------
+
+    public String viewAccount() {
+        ConversationContext<Account> ctx = AccountController.newEditContext(getFaqAnswer().getAccount());
+        ctx.setLabelWithKey("faqAnswer_account");
+        getCurrentConversation().setNextContextSubReadOnly(ctx);
+        return ctx.view();
+    }
+
+    public String selectAccount() {
+        ConversationContext<Account> ctx = AccountController.newSearchContext();
+        ctx.setLabelWithKey("faqAnswer_account");
+        ctx.setCallBack(selectAccountCallBack);
+        getCurrentConversation().setNextContextSub(ctx);
+        return ctx.view();
+    }
+
+    protected ConversationCallBack<Account> selectAccountCallBack = new ConversationCallBack<Account>() {
+        private static final long serialVersionUID = 1L;
+
+        // will be invoked from the FaqAnswerLazyDataModel
+        @Override
+        protected void onSelected(Account account) {
+            setSelectedAccount(account);
+            messageUtil.infoEntity("status_selected_ok", getFaqAnswer().getAccount());
+        }
+    };
+
+    public String addAccount() {
+        ConversationContext<Account> ctx = AccountController.newEditContext(new Account());
+        ctx.setLabelWithKey("faqAnswer_account");
+        ctx.setCallBack(addAccountCallBack);
+        getCurrentConversation().setNextContextSub(ctx);
+        return ctx.view();
+    }
+
+    protected ConversationCallBack<Account> addAccountCallBack = new ConversationCallBack<Account>() {
+        private static final long serialVersionUID = 1L;
+
+        @Override
+        protected void onOk(Account account) {
+            // detach the currently set target if present
+            if (getFaqAnswer().getAccount() != null) {
+                getCurrentConversation().getEntityManager().detach(getFaqAnswer().getAccount());
+            }
+
+            getFaqAnswer().setAccount(account);
+            messageUtil.infoEntity("status_created_ok", account);
+        }
+    };
+
+    public String editAccount() {
+        ConversationContext<Account> ctx = AccountController.newEditContext(getFaqAnswer().getAccount());
+        ctx.setLabelWithKey("faqAnswer_account");
+        getCurrentConversation().setNextContextSub(ctx);
         return ctx.view();
     }
 }

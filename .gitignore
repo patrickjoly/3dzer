@@ -1,1 +1,6 @@
+<<<<<<< HEAD
+=======
+*.log
+*.class
+>>>>>>> origin/master
 .idea/workspace.xml
