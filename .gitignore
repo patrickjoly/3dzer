@@ -1,7 +1,4 @@
 *.log
 *.class
 .idea/workspace.xml
-*.pasbeau
-*.Dumontier
-*.hola
-*.mexico
+
