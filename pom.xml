@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.dddzer</groupId>
@@ -16,10 +12,6 @@
     </prerequisites>
     <properties>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
         <database.name>${project.name}</database.name>
         <database.host>localhost</database.host>
         <database.user>${project.name}</database.user>
