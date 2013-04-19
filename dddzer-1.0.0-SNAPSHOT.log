@@ -1474,3 +1474,10 @@
 [2013-04-18 15:44:21,920] [qtp954339663-61] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
 [2013-04-18 15:45:05,397] [qtp954339663-52] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
 [2013-04-18 15:45:05,435] [qtp954339663-52] [rjy71bg0xx0omipruvcjyg9u] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
+[2013-04-19 08:50:54,661] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-19 08:54:39,531] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-19 09:04:25,177] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-19 09:05:06,719] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-19 09:30:02,589] [main] [] [] [search.impl.ConfigContext.getLuceneMatchVersion] HSEARCH000075: Configuration setting hibernate.search.lucene_version was not specified, using LUCENE_CURRENT.
+[2013-04-19 09:33:57,565] [qtp856739451-22] [1jc0e0pq4e0b0vnoumuzogmmw] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RESTORE_VIEW 1
+[2013-04-19 09:33:58,237] [qtp856739451-22] [1jc0e0pq4e0b0vnoumuzogmmw] [anonymousUser] [web.util.LogPhaseListener.afterPhase] RENDER_RESPONSE 6
